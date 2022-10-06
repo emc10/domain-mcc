@@ -209,10 +209,6 @@ body.is-loading #main > .inner > * {
 	transition-delay: 0.125s;
 }
 
-#main > .inner > :nth-child(3) {
-	transition-delay: 0.25s;
-}
-
 body.is-instant #main, body.is-instant #main > .inner > *,body.is-instant #main > .inner > section > *  {
 	transition: none !important;
 }
@@ -264,34 +260,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text02 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text03:not(:first-child) {
-	margin-top: 6rem !important;
-}
-
-#text03:not(:last-child) {
-	margin-bottom: 6rem !important;
-}
-
-#text03 {
-	color: rgba(255,255,255,0.749);
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.55;
-	font-weight: 200;
-}
-
-#text03 a {
-	text-decoration: underline;
-}
-
-#text03 a:hover {
-	text-decoration: none;
-}
-
-#text03 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -425,21 +393,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		line-height: 1.175;
 	}
 	
-	#text03:not(:first-child) {
-		margin-top: 2.625rem !important;
-	}
-	
-	#text03:not(:last-child) {
-		margin-bottom: 2.625rem !important;
-	}
-	
-	#text03 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.55;
-	}
-	
 	#icons01 {
 		font-size: 1.5em;
 		gap: 1.375rem;
@@ -469,10 +422,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#text02 {
 		font-size: 3em;
-	}
-	
-	#text03 {
-		font-size: 0.625em;
 	}
 	
 	#icons01 {
