@@ -1,0 +1,23 @@
+BEGIN:VCARD
+VERSION:3.0
+N:McCance;Eric;;;
+FN:Eric McCance
+ORG:McCance.ca
+ADR;TYPE=HOME:Toronto, Canada
+TITLE:
+TEL;TYPE=CELL:
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:
+EMAIL;TYPE=HOME:eric@mccance.ca
+URL;TYPE=Digital Business Card:
+URL:https://mccance.ca
+URL;TYPE=Location:https://maps.app.goo.gl/Pb5dFGnTgMU6dzJi6
+URL;TYPE=Website:https://mccance.ca
+URL;TYPE=WhatsApp:https://wa.me/qr/FKYQN5IIAVN3F1
+URL;TYPE=Messenger:https://m.me/whatsapp
+URL;TYPE=Instagram:https://instagram.com/ericmcyyz
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:
+UID:
+END:VCARD
