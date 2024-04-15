@@ -10,17 +10,14 @@ TEL;TYPE=CELL:
 TEL;TYPE=WORK:
 TEL;TYPE=HOME:
 EMAIL;TYPE=HOME:eric@mccance.ca
-URL:https://mccance.ca/card/index.html
-URL;TYPE=Digital Business Card:https://mccance.ca/card/ericmcyyz.vcf
 URL;TYPE=Location:https://maps.app.goo.gl/Pb5dFGnTgMU6dzJi6
-URL;TYPE=Website:https://mccance.ca
+URL;TYPE=Website:https://mccance.ca/card/index.html
 URL;TYPE=WhatsApp:https://wa.me/qr/FKYQN5IIAVN3F1
 URL;TYPE=Messenger:https://m.me/whatsapp
 URL;TYPE=Instagram:https://instagram.com/ericmcyyz
 KEY;TYPE=PGP;ENCODING=b:
 CATEGORIES:mountaineer,hiker,runner
-GEO:43.642729185346525;-79.38700314859945
-NOTE:loves to talk finance, health, tech and personal growth!
+NOTE:loves talking finance, health/fitness, tech & personal growth!
 UID:
 SOURCE:https://mccance.ca/card/ericmcyyz.vcf
 REV:20240415T000000Z
