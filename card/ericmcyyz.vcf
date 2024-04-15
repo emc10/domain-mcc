@@ -3,15 +3,15 @@ VERSION:3.0
 N:McCance;EricTEST;;;
 FN:EricTEST McCance
 ORG:McCance.ca
+PHOTO;TYPE=JPEG;VALUE=URI:http://mccance.ca/card/assets/images/image01.jpg
 ADR;TYPE=HOME:Toronto, Canada
 TITLE:
 TEL;TYPE=CELL:
 TEL;TYPE=WORK:
 TEL;TYPE=HOME:
-TEL;TYPE=MSG:
 EMAIL;TYPE=HOME:eric@mccance.ca
+URL:https://mccance.ca/card/index.html
 URL;TYPE=Digital Business Card:https://mccance.ca/card/ericmcyyz.vcf
-URL:https://mccance.ca
 URL;TYPE=Location:https://maps.app.goo.gl/Pb5dFGnTgMU6dzJi6
 URL;TYPE=Website:https://mccance.ca
 URL;TYPE=WhatsApp:https://wa.me/qr/FKYQN5IIAVN3F1
@@ -19,6 +19,9 @@ URL;TYPE=Messenger:https://m.me/whatsapp
 URL;TYPE=Instagram:https://instagram.com/ericmcyyz
 KEY;TYPE=PGP;ENCODING=b:
 CATEGORIES:mountaineer,hiker,runner
-NOTE:**check ADR type format.
+GEO:43.642729185346525;-79.38700314859945
+NOTE:loves to talk finance, health, tech and personal growth!
 UID:
+SOURCE:https://mccance.ca/card/ericmcyyz.vcf
+REV:20240415T000000Z
 END:VCARD
