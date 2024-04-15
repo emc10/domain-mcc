@@ -3,16 +3,16 @@ VERSION:3.0
 N:McCance;Eric;;;
 FN:Eric McCance
 ORG:McCance.ca
-ADR;TYPE=HOME:Toronto, Canada
+ADR;TYPE=Home:Toronto, Canada
 TITLE:
-TEL;TYPE=CELL:
-TEL;TYPE=WORK:
-TEL;TYPE=HOME:
-EMAIL;TYPE=HOME:eric@mccance.ca
+TEL;TYPE=Cell:
+TEL;TYPE=Work:
+TEL;TYPE=Home:
+EMAIL;TYPE=Home:eric@mccance.ca
 URL;TYPE=Website:https://mccance.ca/card/index.html
+URL;TYPE=Instagram:https://instagram.com/ericmcyyz
 URL;TYPE=WhatsApp:https://wa.me/qr/FKYQN5IIAVN3F1
 URL;TYPE=Messenger:https://m.me/whatsapp
-URL;TYPE=Instagram:https://instagram.com/ericmcyyz
 KEY;TYPE=PGP;ENCODING=b:
 CATEGORIES:mountaineer,hiker,runner
 NOTE:loves talking finance, health/fitness, tech & personal growth!
