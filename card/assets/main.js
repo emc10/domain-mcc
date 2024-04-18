@@ -530,34 +530,6 @@
 			// Expose scrollToElement.
 				window._scrollToTop = scrollToTop;
 	
-	// "On Load" animation.
-		// Create load handler.
-			var loadHandler = function() {
-				setTimeout(function() {
-		
-					// Unmark as loading.
-						$body.classList.remove('is-loading');
-		
-					// Mark as playing.
-						$body.classList.add('is-playing');
-		
-					// Wait for animation complete.
-						setTimeout(function() {
-		
-							// Unmark as playing.
-								$body.classList.remove('is-playing');
-		
-							// Mark as ready.
-								$body.classList.add('is-ready');
-		
-						}, 750);
-		
-				}, 100);
-			};
-		
-		// Load event.
-			on('load', loadHandler);
-	
 	// Load elements.
 		// Load elements (if needed).
 			loadElements(document.body);
@@ -687,5 +659,16 @@
 					$body.classList.add('is-touch');
 		
 			}
+	
+	// Buttons: buttons01.
+		$('#buttons01 > li:nth-child(1) > a').addEventListener(
+			'click',
+			function(event) { 
+				navigator.share({
+				title: document.title,
+				url: window.location.href
+				})
+			}
+		);
 
 })();
