@@ -174,6 +174,17 @@
 				return o;
 		
 			}()),
+			ready = {
+				list: [],
+				add: function(f) {
+					this.list.push(f);
+				},
+				run: function() {
+					this.list.forEach((f) => {
+						f();
+					});
+				},
+			},
 			trigger = function(t) {
 				dispatchEvent(new Event(t));
 			},
@@ -439,10 +450,10 @@
 		
 						}
 		
-				// Deferred script tags.
+				// Embeds.
 		
-					// Get list of deferred script tags.
-						a = parent.querySelectorAll('deferred-script');
+					// Get unloaded embeds.
+						a = parent.querySelectorAll('unloaded-script');
 		
 					// Step through list.
 						for (i=0; i < a.length; i++) {
@@ -450,8 +461,8 @@
 							// Create replacement script tag.
 								x = document.createElement('script');
 		
-							// Set deferred data attribute (so we can unload this element later).
-								x.setAttribute('data-deferred', '');
+							// Set "loaded" data attribute (so we can unload this element later).
+								x.setAttribute('data-loaded', '');
 		
 							// Set "src" attribute (if present).
 								if (a[i].getAttribute('src'))
@@ -465,6 +476,25 @@
 								a[i].replaceWith(x);
 		
 						}
+		
+				// Everything else.
+		
+					// Create "loadelements" event.
+						x = new Event('loadelements');
+		
+					// Get unloaded elements.
+						a = parent.querySelectorAll('[data-unloaded]');
+		
+					// Step through list.
+						a.forEach((element) => {
+		
+							// Clear attribute.
+								element.removeAttribute('data-unloaded');
+		
+							// Dispatch event.
+								element.dispatchEvent(x);
+		
+						});
 		
 			},
 			unloadElements = function(parent) {
@@ -521,18 +551,18 @@
 						if (e)
 							e.blur();
 		
-				// Deferred script tags.
+				// Embeds.
 				// NOTE: Disabled for now. May want to bring this back later.
 				/*
 		
-					// Get list of (previously deferred) script tags.
-						a = parent.querySelectorAll('script[data-deferred]');
+					// Get loaded embeds.
+						a = parent.querySelectorAll('script[data-loaded]');
 		
 					// Step through list.
 						for (i=0; i < a.length; i++) {
 		
-							// Create replacement deferred-script tag.
-								x = document.createElement('deferred-script');
+							// Create replacement unloaded-script tag.
+								x = document.createElement('unloaded-script');
 		
 							// Set "src" attribute (if present).
 								if (a[i].getAttribute('src'))
@@ -831,5 +861,8 @@
 			});
 		
 		})();
+	
+	// Run ready handlers.
+		ready.run();
 
 })();
