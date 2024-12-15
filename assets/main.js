@@ -604,7 +604,7 @@
 							// Mark as ready.
 								$body.classList.add('is-ready');
 		
-						}, 1000);
+						}, 1125);
 		
 				}, 100);
 			};
@@ -856,7 +856,7 @@
 				target: '#bg',
 				src: 'assets/videos/bg.mp4',
 				poster: 'assets/videos/bg.mp4.jpg',
-				position: 'center',
+				position: 'top',
 				loop: true
 			});
 		
