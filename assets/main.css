@@ -450,7 +450,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 @font-face {
   font-family: "Campton SemiBold";
   src:
-    url("Campton_SemiBold_modified_1_Rene_Bieder.otf");
+    url('campton-semibold-modA-webfont.woff2') format('woff2'),
+    url('campton-semibold-modA-webfont.woff') format('woff');
 }
 
 #text02 a {
