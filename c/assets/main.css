@@ -97,7 +97,7 @@ a[onclick]:not([href]) {
 	cursor: pointer;
 }
 
-deferred-script {
+unloaded-script {
 	display: none;
 }
 
@@ -436,8 +436,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	--gutters: 2rem;
 	--spacing: 0rem;
 	padding: var(--padding-vertical) var(--padding-horizontal);
-	border-top-left-radius: calc(0.5rem - 1px);
-	border-top-right-radius: calc(0.5rem - 1px);
+	border-top-left-radius: calc(0.5rem - 0px);
+	border-top-right-radius: calc(0.5rem - 0px);
 }
 
 #container02 > .wrapper {
@@ -540,7 +540,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #container02.columns > .wrapper > .inner > .full {
 	align-self: stretch;
-	min-height: 21rem;
+	min-height: calc(21rem - (var(--padding-vertical) * 2));
 }
 
 #container02.columns > .wrapper > .inner > .full:first-child {
@@ -580,8 +580,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	--padding-horizontal: 1.75rem;
 	--padding-vertical: 0rem;
 	padding: var(--padding-vertical) var(--padding-horizontal);
-	border-bottom-left-radius: calc(0.5rem - 2px);
-	border-bottom-right-radius: calc(0.5rem - 2px);
+	border-bottom-left-radius: calc(0.5rem - 0px);
+	border-bottom-right-radius: calc(0.5rem - 0px);
 }
 
 #container03 > .wrapper {
@@ -904,6 +904,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	flex-shrink: 0;
 	height: 100%;
 	min-width: 16px;
+	pointer-events: none;
 	width: 1.625em;
 	margin-left: 0.5em;
 	margin-right: calc(-0.125em + 0.1rem);
@@ -967,6 +968,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	flex-shrink: 0;
 	height: 100%;
 	min-width: 16px;
+	pointer-events: none;
 	width: 1.25em;
 	margin-left: -0.125em;
 	margin-right: calc(0.25rem + 0rem);
@@ -1175,7 +1177,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#container02.columns > .wrapper > .inner > .full {
-		min-height: 15.75rem;
+		min-height: calc(15.75rem - (var(--padding-vertical) * 2));
 	}
 	
 	#container02.columns > .wrapper > .inner > .full > .full:first-child:last-child {
@@ -1481,7 +1483,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#container02.columns > .wrapper > .inner > .full {
-		min-height: 10.5rem;
+		min-height: calc(10.5rem - (var(--padding-vertical) * 2));
 	}
 	
 	#container03 > .wrapper > .inner {
